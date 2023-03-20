@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<meta charset="utf-8" />
+  		<title> Delivery_planning </title>
+		<link rel="stylesheet" type ="text/css" href="reset.css"/>
+		<link rel="stylesheet" type ="text/css" href="styles.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	</head>
+
+	
+	<body>
+
+	
+	
+		<div class="main">
+
+<!-- Основной размер сайта, расположение картинки -->
+
+		
+			<div class="hero_main_size">
+
+				<div>
+					<img class="hero_main__image_size" src="mountains.jpg" alt="Горное озеро"/>
+				</div>
+
+<!-- Блок с формамм -->
+
+				<div class="form_registration__main">
+					
+					<h1 class="title">Регистрация</h1>
+
+						<form action="https://www.bit-by-bit.ru/form-submit">
+
+
+
+<!-- Первый блок регистрации (сведения о клиенте) -->
+
+							<div class="request_about-you">
+								<div class="imput_items">
+									<div class="imput_item__name-concacts">
+										<label class="request_lable" for="Name">Имя</label>
+										<input class="input__items" type="text" id="Name" name="firstName" style="margin-bottom: 20px;"/>
+									</div>
+														
+									<div class="imput_item__name-concacts">
+										<label class="request_lable" for="Surname">Фамилия</label>
+										<input class="input__items" type="text" id="Surname" name="lastName"/>
+									</div>
+								</div>
+
+
+								<div class="imput_items">
+									<div class="imput_item__name-concacts">
+										<label class="request_lable" for="Email">Email</label>
+										<input class="input__items" type="email" id="Email" name="email" style="margin-bottom: 20px;"/>
+									</div>
+								
+									<div class="imput_item__name-concacts">
+										<label class="request_lable" for="Phone">Телефон</label>
+										<input class="input__items" type="tel" id="Phone" name="phone"/>
+									</div>
+								</div>
+							</div>
+
+
+
+<!-- Второй блок регистрации (адрес доставки) -->
+
+								<div class="request_address">
+
+									<h2 class="request__title">Адрес доставки</h2>
+
+									<div>
+										<label class="request_lable" for="Country">Страна</label>
+									</div>
+	
+									<div>
+										<select autocomplete="country-name" id="Country" name="country">
+											<option>Россия</option>
+											<option>Белорусь</option>
+											<option>Казахстан</option>
+											<option>Польша</option>
+										</select>
+									</div>
+						
+
+									<div>
+										<label class="request_lable" for="City">Город</label>
+									</div>
+	
+									<div>
+										<input class="input__items" type="text" id="City" name="city"/>
+									</div>
+
+
+									<div>
+										<label class="request_lable" for="Postcode">Почтовый индекс</label>
+									</div>
+	
+									<div>
+										<input class="input__items" type="text" id="Postcode" name="postcode"/>
+									</div>
+
+
+									<div>
+										<label class="request_lable" for="full-address">Адрес доставки (улица, дом, квартира)</label>
+									</div>
+	
+									<div>
+										<input class="input__items-full-address" type="text" id="full-address" name="full-shipping-address"/>
+									</div>
+			
+								</div>
+
+
+
+<!-- Третий блок регистрации (уведомления, чекбоксы) -->
+
+								<div class="request_notification">
+
+									
+									<h2 class="request__title">Уведомлять об акциях и скидках</h2>
+
+									<div>
+										<p class="request_notification__text">Мы не будем отправлять спам, но напишем, 
+											когда поступят новые товары или будет большая распродажа.</p>
+									</div>
+
+
+									<fieldset>
+
+											<div>
+												<input class="checkbox" type="checkbox" name="emailNotifications" id="email" value="email" />
+												<label class="request_lable" for="email">По Email</label>
+											</div>
+
+
+											<div>
+												<input class="checkbox" type="checkbox" name="smsNotifications" id="sms" value="sms" />
+												<label class="request_lable" for="sms">По SMS</label>
+											</div>
+
+
+											<div>
+												<input class="checkbox" type="checkbox" name="pushNotifications" id="push" value="push" />
+												<label class="request_lable" for="push">Push-уведомления в приложении</label>
+											</div> 
+							
+									</fieldset>					
+								</div>
+
+							<button class="button_style">Создать аккаунт</button>
+
+						</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
